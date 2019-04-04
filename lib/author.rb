@@ -1,9 +1,9 @@
 class Author
   attr_accessor :name, :posts
-  @@post_count = 0
+  @@post_count = 0 # counter outside of initialize
   def initialize(name)
     @name = name
-    @posts = []
+    @posts = [] # empty array post
   end
   def author_name # if there is no author, return nil
     if self.author
